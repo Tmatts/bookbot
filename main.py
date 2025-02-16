@@ -1,5 +1,4 @@
 def character_count(file_path: str)->dict:
-    char_count = 0
     char_dict = {}
 
     with open(file_path) as file:
@@ -10,12 +9,12 @@ def character_count(file_path: str)->dict:
                 char_dict[char] += 1
             else:
                 char_dict[char] = 1
-        for _ , value in char_dict.items():
-            char_count += value
         for char, value in char_dict.items():
-            print(f"The '{char}' character was found {value} times")
+            if char.isalpha():
+                print(f"The '{char}' character was found {value} times")
         return char_dict
 
 
 if __name__ == "__main__":
     file_path = "books/frankenstein.txt"
+    character_count(file_path)
