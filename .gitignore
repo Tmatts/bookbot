@@ -172,3 +172,4 @@ cython_debug/
 
 # project specific folders
 books/
+.qodo
