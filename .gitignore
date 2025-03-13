@@ -171,5 +171,5 @@ cython_debug/
 .pypirc
 
 # project specific folders
-books/
+/books/
 .qodo
